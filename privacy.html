@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Privacy Policy. EyeCandy.</title>
+<meta name="description" content="How EyeCandy collects, stores, and protects your data. Privacy-first by default. No ads, no third-party trackers, no data sales." />
+<meta name="theme-color" content="#0A0A0F" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="index.html">
+    <img src="assets/paw.png" alt="" width="28" height="28" />
+    <span>EyeCandy</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#schedule">Features</a>
+    <a href="index.html#candy">Candy AI</a>
+    <a href="support.html">Support</a>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="doc-hero">
+  <div class="doc-eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="doc-meta">Last updated: April 16, 2026</p>
+</section>
+
+<article class="doc">
+
+<h2>1. Introduction</h2>
+<p>Welcome to EyeCandy ("EyeCandy," "we," "us," or "our"). EyeCandy is a personal media-tracking application that helps you discover, organize, rate, and schedule movies, TV shows, anime, manga, comics, books, video games, and sports. This Privacy Policy explains what information we collect when you use EyeCandy, why we collect it, how it is stored and protected, and the rights you have over your data.</p>
+<p>We designed EyeCandy to be privacy-respecting by default. We do not sell your personal information, we do not share it with advertisers, and we do not embed third-party advertising SDKs in the app.</p>
+<p>By using EyeCandy, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the app.</p>
+<p>This policy is published by the developer (an independent developer), contactable at <a href="mailto:eyecandyiossupport@gmail.com">eyecandyiossupport@gmail.com</a>.</p>
+
+<hr />
+
+<h2>2. Information We Collect</h2>
+<p>We only collect the information that is necessary to provide the features you use. The categories below describe everything that may be collected and stored while you use EyeCandy.</p>
+
+<h3>2.1 Account Information</h3>
+<p>Your EyeCandy account uses an <strong>email address and password</strong> managed by Firebase Authentication. We do not use Apple Sign-in, Google Sign-in, or other social identity providers for account creation or login.</p>
+<p>When you create an EyeCandy account, we collect:</p>
+<ul>
+  <li><strong>Email address</strong>. Used to sign you in, recover your account, and send important account notices.</li>
+  <li><strong>Password</strong>. Handled and stored by Firebase Authentication as a secure, salted hash. We never receive, log, or have access to your plaintext password.</li>
+  <li><strong>Display name</strong>. Shown in the app to personalize your experience.</li>
+  <li><strong>Unique user identifier (UID)</strong>. A random identifier assigned by Firebase Authentication that links your data to your account. The UID is not derived from any personal information.</li>
+</ul>
+
+<h3>2.2 Your Library and Activity Data</h3>
+<p>EyeCandy stores the content you choose to save so it can be synced across your devices:</p>
+<ul>
+  <li><strong>Watchlists, reading lists, and play lists</strong>. The titles you add, their status (e.g., "watching," "completed," "plan to watch"), and any personal notes you attach.</li>
+  <li><strong>Ratings and reviews</strong>. Numeric ratings and written reviews you create.</li>
+  <li><strong>Schedule and calendar entries</strong>. Items you have scheduled or pinned to your personal calendar.</li>
+  <li><strong>Tracked items and progress</strong>. Episodes watched, chapters read, pages completed, hours played, teams or leagues followed, and similar progress indicators.</li>
+  <li><strong>Preferences and settings</strong>. App configuration such as theme, default list view, notification preferences, and enabled features.</li>
+</ul>
+
+<h3>2.3 Integrations and User-Supplied Credentials</h3>
+<p>Some features require connecting to third-party services. These integrations are <strong>optional linked accounts for data sync</strong>. They are not identity providers for your EyeCandy account. When you enable these integrations, we store only what is needed for the integration to function:</p>
+<ul>
+  <li><strong>OAuth tokens</strong> issued by services you link (e.g., MyAnimeList, RAWG, TMDB, Open Library, Apple Music, Spotify). Tokens are stored securely in your account and used solely to read or write the data you have authorized.</li>
+  <li><strong>User-supplied API keys</strong>. If you supply your own API key for a service (for example, a personal DeepSeek API key or Google TTS key), the key is encrypted at rest in your account and used only for requests you initiate.</li>
+</ul>
+<p>You can revoke any integration at any time from within the app, which deletes the associated tokens and keys from our systems.</p>
+
+<h3>2.4 Notifications</h3>
+<ul>
+  <li><strong>Push notification token</strong> issued by Apple Push Notification service (APNs) or Firebase Cloud Messaging (FCM). We store this token so we can deliver notifications you have opted into (for example, release reminders and schedule alerts). Notifications are disabled by default until you grant permission.</li>
+</ul>
+
+<h3>2.5 Candy AI Assistant Usage</h3>
+<p>EyeCandy includes an optional AI assistant called <strong>Candy AI</strong>. When you use Candy AI, we collect:</p>
+<ul>
+  <li><strong>Chat prompts and responses</strong>. The text you send and the replies generated. These are stored only long enough to display the conversation in the app and to enforce fair-use rate limits.</li>
+  <li><strong>Usage counters and timestamps</strong>. The number of requests you have made within a given period, used exclusively to prevent abuse and apply rate limits.</li>
+  <li><strong>User-supplied DeepSeek API key (optional)</strong>. If you choose to supply your own DeepSeek API key, your Candy AI requests are sent <strong>directly to DeepSeek</strong> and are subject to DeepSeek's own privacy policy. In this mode, requests do <strong>not</strong> pass through our Firebase proxy. Your key is stored encrypted at rest in your account and is used only for requests you initiate.</li>
+  <li><strong>In-chat AI reports</strong>. If you report a problematic AI response from within the chat, we store your UID and a truncated snippet of the assistant message (up to 2,000 characters). These reports are reviewed by the developer to improve safety and response quality.</li>
+  <li>We do <strong>not</strong> use your chat history to train AI models.</li>
+</ul>
+
+<h3>2.6 Device and Diagnostic Information</h3>
+<p>To keep the app stable and compatible, we collect a minimal amount of device metadata:</p>
+<ul>
+  <li><strong>Operating system and version</strong> (e.g., "iOS 18.3").</li>
+  <li><strong>Device model class</strong> (e.g., "iPhone").</li>
+  <li><strong>App version and build number.</strong></li>
+  <li><strong>Crash logs and non-fatal error reports</strong>, if you have Apple's diagnostic sharing enabled or if we use a crash-reporting service.</li>
+</ul>
+<p>We do not collect your precise location, your contact list, your photo library, your microphone, your advertising identifier (IDFA), or any biometric data.</p>
+
+<h3>2.7 Information We Do Not Collect</h3>
+<p>For clarity:</p>
+<ul>
+  <li>We do not track you across apps or websites.</li>
+  <li>We do not use advertising SDKs.</li>
+  <li>We do not create marketing profiles about you.</li>
+  <li>We do not sell any data.</li>
+</ul>
+
+<hr />
+
+<h2>3. How We Use Your Information</h2>
+<p>We use the information described above only for the purposes listed here:</p>
+<ul>
+  <li><strong>To provide the core app experience</strong>. Storing your lists, ratings, schedule, tracked progress, and preferences so they appear correctly on every device where you sign in.</li>
+  <li><strong>To authenticate you</strong>. Verifying your identity when you sign in with your email address and password via Firebase Authentication.</li>
+  <li><strong>To sync your data</strong>. Replicating your library across your devices in near real time.</li>
+  <li><strong>To send notifications you have opted into</strong>. Release reminders, schedule alerts, and other alerts tied to items you track.</li>
+  <li><strong>To enable optional integrations</strong>. For example, importing your MyAnimeList library when you have authorized those services.</li>
+  <li><strong>To power Candy AI</strong>. Forwarding your prompt to the AI provider and returning the response.</li>
+  <li><strong>To enforce fair use and prevent abuse</strong>. Counting requests to Candy AI, detecting automated abuse, and preventing credential misuse.</li>
+  <li><strong>To diagnose problems and improve reliability</strong>. Using crash reports and aggregate usage signals to fix bugs and compatibility issues.</li>
+  <li><strong>To communicate with you about your account</strong>. Security notices, service changes, or responses to support requests.</li>
+</ul>
+<p>We do not use your information for advertising, marketing profiling, or resale.</p>
+
+<hr />
+
+<h2>4. Third-Party Services and Data Sources</h2>
+<p>EyeCandy relies on carefully chosen third parties to deliver its features. Each has its own privacy practices, which govern the data they receive.</p>
+
+<h3>4.1 Infrastructure Processors</h3>
+<ul>
+  <li><strong>Firebase Authentication (Google LLC)</strong>. Handles sign-in, session tokens, and account recovery.</li>
+  <li><strong>Cloud Firestore (Google LLC)</strong>. Stores your account data, lists, ratings, schedule, preferences, and integration tokens.</li>
+  <li><strong>Firebase Cloud Functions (Google LLC)</strong>. Runs server-side logic, such as proxying AI requests and enforcing rate limits.</li>
+  <li><strong>Firebase Cloud Messaging / Apple Push Notification service</strong>. Delivers push notifications you have opted into.</li>
+  <li><strong>DeepSeek</strong>. Provides the large language model that powers the Candy AI assistant.</li>
+  <li><strong>Google Cloud Text-to-Speech</strong>. Converts selected text into spoken audio when you use the text-to-speech feature.</li>
+</ul>
+<p>These providers act as data processors. They are contractually obligated to use your data only to deliver their service to us and to maintain appropriate security controls.</p>
+
+<h3>4.2 Content Data Sources</h3>
+<p>EyeCandy queries public content catalogs to show you metadata such as titles, cover art, release dates, cast, and descriptions. When the app fetches this metadata, only a generic HTTP request is sent. Your account identity and personal data are <strong>not</strong> disclosed to these providers.</p>
+<ul>
+  <li><strong>The Movie Database (TMDB)</strong>. Movies, TV shows, and people.</li>
+  <li><strong>AniList</strong>. Anime and manga metadata and optional list syncing if you connect your account.</li>
+  <li><strong>Jikan (MyAnimeList)</strong>. Anime and manga metadata.</li>
+  <li><strong>RAWG</strong> and <strong>IGDB</strong>. Video game metadata.</li>
+  <li><strong>Comic Vine</strong>. Comics metadata.</li>
+  <li><strong>Open Library</strong>. Book metadata and reading-list sync.</li>
+  <li><strong>ESPN</strong>. Sports schedules, scores, and team data.</li>
+</ul>
+<p>If you explicitly authorize an integration, the relevant provider will receive the data you share through that integration under their own privacy policy.</p>
+
+<h3>4.3 No Advertising Partners</h3>
+<p>We do not integrate any advertising networks, analytics SDKs that profile users, or data brokers.</p>
+
+<hr />
+
+<h2>5. Data Storage and Security</h2>
+<p>We take reasonable and industry-standard measures to protect your data.</p>
+<ul>
+  <li><strong>Encrypted in transit</strong>. All communication between the app, our Firebase backend, and third-party APIs uses HTTPS/TLS.</li>
+  <li><strong>Encrypted at rest</strong>. Firebase Authentication and Cloud Firestore encrypt stored data at rest.</li>
+  <li><strong>Access controls</strong>. Firestore security rules restrict each user's records to that user's authenticated UID. A user cannot read or write another user's data.</li>
+  <li><strong>Secret handling</strong>. API keys we own are stored in secure server-side configuration and are never embedded in the app binary. User-supplied API keys are stored encrypted and scoped to the user's account.</li>
+  <li><strong>Server-side proxying</strong>. Requests to third-party APIs that require credentials or rate limiting are proxied through Firebase Cloud Functions.</li>
+  <li><strong>Principle of least privilege</strong>. Only authorized maintainers have administrative access to the backend, and administrative access is audited.</li>
+  <li><strong>No advertising trackers.</strong></li>
+</ul>
+<p>No online service can guarantee absolute security, but we work continuously to identify and mitigate risks. If we become aware of a security incident affecting your data, we will notify you as required by applicable law.</p>
+
+<hr />
+
+<h2>6. Your Rights and Choices</h2>
+
+<h3>6.1 Access and Review</h3>
+<p>You can view all of the content you have added to EyeCandy (lists, ratings, schedule, tracked progress, and preferences) directly within the app at any time.</p>
+
+<h3>6.2 Correction</h3>
+<p>You can edit or update any entry you have created, change your display name, and update your preferences from within the app.</p>
+
+<h3>6.3 Deletion</h3>
+<ul>
+  <li><strong>Delete individual items.</strong> Remove any list entry, rating, review, or scheduled item at any time.</li>
+  <li><strong>Disconnect integrations.</strong> Revoke OAuth tokens and delete user-supplied API keys from the app's Settings screen.</li>
+  <li><strong>Delete your entire account.</strong> You can delete your account from within the app at <strong>Settings → Account → Delete Account</strong>. Account deletion removes your Firebase Authentication record and all Firestore documents associated with your UID. Some residual backup copies may persist for up to 30 days before being overwritten on routine backup rotation.</li>
+</ul>
+
+<h3>6.4 Export</h3>
+<p>You can export your library to CSV or MAL XML from within the app (<strong>Settings → Data → Export</strong>). The export includes your lists, ratings, and tracked items in a portable format that you own and can take to another service.</p>
+
+<h3>6.5 Notification Controls</h3>
+<p>You can disable push notifications at any time, either within EyeCandy's Settings or in your device's system Settings app.</p>
+
+<h3>6.6 Regional Rights</h3>
+<p>Depending on where you live, you may have additional rights under laws such as the EU General Data Protection Regulation (GDPR), the UK GDPR, the California Consumer Privacy Act (CCPA/CPRA), and similar statutes. These may include the right to:</p>
+<ul>
+  <li>Request a copy of the personal information we hold about you.</li>
+  <li>Request correction or deletion of that information.</li>
+  <li>Object to or restrict certain processing.</li>
+  <li>Lodge a complaint with your local data protection authority.</li>
+</ul>
+<p>To exercise these rights, contact us at <a href="mailto:eyecandyiossupport@gmail.com">eyecandyiossupport@gmail.com</a>. We will respond within the timeframe required by applicable law. We will never discriminate against you for exercising a privacy right.</p>
+
+<hr />
+
+<h2>7. Children's Privacy</h2>
+<p>EyeCandy is not directed to children under the age of 13 (or the equivalent minimum age in your jurisdiction, such as 16 in parts of the EU). We do not knowingly collect personal information from children. If you believe a child has provided us personal information without appropriate consent, please contact <a href="mailto:eyecandyiossupport@gmail.com">eyecandyiossupport@gmail.com</a> and we will promptly delete the information and terminate the account.</p>
+
+<hr />
+
+<h2>8. Data Retention</h2>
+<ul>
+  <li><strong>Active accounts.</strong> Your data is retained for as long as you continue to use EyeCandy.</li>
+  <li><strong>Deleted accounts.</strong> When you delete your account, we remove your Firebase Authentication record and your Firestore documents. Residual copies in encrypted backups are overwritten within 30 days on normal rotation.</li>
+  <li><strong>Candy AI history.</strong> Chat history is retained until you clear it or delete your account. Rate-limit counters reset on a rolling basis.</li>
+  <li><strong>Diagnostic data.</strong> Crash logs and aggregate diagnostics are retained for up to 90 days for debugging and reliability purposes.</li>
+</ul>
+
+<hr />
+
+<h2>9. International Users</h2>
+<p>EyeCandy uses Google's Firebase platform, which operates globally. Your data may be stored and processed in data centers outside your country of residence, including in the United States. We rely on Google Cloud's <strong>Standard Contractual Clauses (SCCs)</strong> for international data transfers. Our Firebase project is hosted in Google Cloud's multi-region (<strong>us-central1</strong>). For EU/UK users who require in-region data localization, please contact <a href="mailto:eyecandyiossupport@gmail.com">eyecandyiossupport@gmail.com</a>.</p>
+
+<hr />
+
+<h2>10. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices, new features, or legal requirements. When we make a material change, we will:</p>
+<ul>
+  <li>Update the <strong>"Last Updated"</strong> date at the top of this page.</li>
+  <li>Post the revised policy at this URL.</li>
+  <li>Notify you in the app or via email if the change materially affects your rights or how we handle your data.</li>
+</ul>
+<p>Continuing to use EyeCandy after an update means you accept the revised policy. If you do not agree, you can export your data and delete your account at any time.</p>
+
+<hr />
+
+<h2>11. Contact Us</h2>
+<p>If you have questions, concerns, or requests about this Privacy Policy or your data, please get in touch:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:eyecandyiossupport@gmail.com">eyecandyiossupport@gmail.com</a></li>
+</ul>
+<p>We do our best to respond to every privacy inquiry within 30 days.</p>
+
+</article>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-cols">
+    <div class="foot-col foot-col-brand">
+      <div class="foot-brand">
+        <img src="assets/paw.png" alt="" width="24" height="24" />
+        <span>EyeCandy</span>
+      </div>
+      <p class="foot-tag">One library for everything you watch, read, play, and listen to.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Product</h4>
+      <a href="index.html#schedule">Features</a>
+      <a href="index.html#candy">Candy AI</a>
+      <a href="index.html#download">Download</a>
+    </div>
+    <div class="foot-col">
+      <h4>Support</h4>
+      <a href="support.html">Help & FAQ</a>
+      <a href="mailto:eyecandyiossupport@gmail.com">Contact us</a>
+      <a href="https://github.com/jacixn/EyeCandy/issues">Report a bug</a>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://github.com/jacixn/EyeCandy">GitHub</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>&copy; 2026 EyeCandy. All rights reserved.</p>
+    <p class="foot-fine">EyeCandy is an independent project. Movie posters, TV stills, anime art, manga covers, and album artwork shown on this site belong to their respective rights holders and are used for product illustration only.</p>
+  </div>
+</footer>
+
+</body>
+</html>
